@@ -7,6 +7,7 @@ function ContactForm() {
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
+    const [errorMessage, setErrorMessage] = useState('');
 
     function handleChange(e) {
         //setFormState({ ...formState, [e.target.name]: e.target.value })
